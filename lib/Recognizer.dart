@@ -50,7 +50,7 @@ class Recognizer{
 
     final Paint _paint = Paint()..strokeCap=StrokeCap.round..color = Colors.white..strokeWidth = Constants.strokeWidth;
 
-    for (int i = 0; i < points.length - 1; i++) {
+  for (int i = 0; i < points.length - 1; i++) {
       if (points[i][0] != -1 && points[i + 1][0] != -1) {
         canvas.drawLine(
           Offset(points[i][0], points[i][1]),
